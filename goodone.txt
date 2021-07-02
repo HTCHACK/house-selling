@@ -1,0 +1,54 @@
+Dom yaratadi
+padej yaratadi
+
+etaj yaratadi
+kv yaratadi
+
+user
+client
+    ism , fio, phone_number, address ,
+
+
+DOM nm = Building
+- nomi
+- rasmi
+- address
+
+padej = Block
+- nomeri
+- dom_id
+
+
+etaj = flour
+- padej_id
+
+kv = flat
+- etaj_id
+- nomeri
+- narxi
+- nechi xonaligi
+- status = > sotildi , sotilmadi (1,0)
+``````````````````
+
+admin
+
+menu
+
+dom
+padej
+etaj
+kv
+sotilgan uylar
+
+
+uy sotish
+
+saled house
+
+uy sotish
+cliend_id
+flat_id
+status
+view()->composer('admin_system.dashboard', function ($view) {
+            $view->with('teachers_count', \App\Teacher::count());
+        });
